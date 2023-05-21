@@ -97,8 +97,8 @@ def process(df,min_max_scaler,model):
 
 def main():
     # 載入模型和scaler
-    model = load_model('model.h5')
-    with open('scaler.pkl', 'rb') as f:
+    model = load_model('model_TWII.h5')
+    with open('scaler_TWII.pkl', 'rb') as f:
         min_max_scaler = pickle.load(f)
     # 資料時間範圍設定
     start_date = (dt.datetime.now() - dt.timedelta(days=180)).strftime("%Y-%m-%d")
