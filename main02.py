@@ -101,7 +101,7 @@ def main():
         action = '建議賣出'
     # 發送消息至Line
     current_time = dt.datetime.now().strftime("%Y-%m-%d")
-    message1 = f"\n日期: {current_time}\n項目: {symbol}\n建議: {action}\n機率: {probability:.2f}"
+    message1 = f"\n日期: {current_time}\n項目: {symbol}\n建議: {action}\n機率: {probability:.4f}"
     print(message1)
     send_line(message1)
 
@@ -124,7 +124,7 @@ def main():
         action = '建議賣出'
     # 發送消息至Line
     current_time = dt.datetime.now().strftime("%Y-%m-%d")
-    message2 = f"\n日期: {current_time}\n項目: {symbol}\n建議: {action}\n機率: {probability:.2f}"
+    message2 = f"\n日期: {current_time}\n項目: {symbol}\n建議: {action}\n機率: {probability:.4f}"
     print(message2)
     send_line(message2)
 
