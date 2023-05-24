@@ -17,6 +17,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: run main02.py
+    - name: run main03.py
       run: |
-        python main02.py
+        python main03.py
